@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile - Mini Project</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">UsahaYuk</div>
+            <div class="space-x-6 font-medium">
+                <a href="#home" class="hover:text-blue-500 transition">Home</a>
+                <a href="#profile" class="hover:text-blue-500 transition">Our Profile</a>
+                <a href="#message" class="hover:text-blue-500 transition">Message Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="pt-24 pb-12 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-8">
+                <h1 class="text-4xl font-extrabold mb-2">Allooo <span id="user-name" class="text-blue-600">Semuanya</span>, Welcome To Website</h1>
+                <p class="text-lg text-gray-500 italic">Ini adalah website latihan pertama saya hehe</p>
+            </div>
+            <div class="relative overflow-hidden rounded-2xl shadow-2xl">
+                <img src="/latihan/1.png" alt="Company Image">
+            </div>
+        </div>
+    </header>
+
+    <section id="profile" class="py-20 bg-white border-t">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 italic underline decoration-blue-500">Our Profile</h2>
+            
+            <div class="mb-16 flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600">About Our Company</h3>
+                    <p class="text-gray-600 leading-relaxed text-justify">
+                       Kami adalah katalisator pertumbuhan bagi bisnis-bisnis yang menjadi akar ekonomi Indonesia. Berdiri sejak tahun 2025, kami hadir dengan misi khusus: Membawa bisnis tradisional melampaui batas konvensional agar kembali "membuming" dan merajai pasar masa kini.
+
+Kami percaya bahwa nilai autentik dari sebuah bisnis tradisional jika dipadukan dengan sentuhan teknologi yang tepat akan menciptakan kekuatan yang luar biasa. Melalui pengembangan website yang elegan dan aplikasi mobile yang intuitif, kami membantu Anda bertransformasi menjadi bisnis yang lebih modern, efisien, dan siap bersaing di level nasional maupun global.
+                    </p>
+                </div>
+                <div class="md:w-1/2 grid grid-cols-3 gap-4">
+                    <div class="p-4 border rounded-full aspect-square flex items-center justify-center bg-blue-50 text-xs font-bold uppercase tracking-widest">Jakarta</div>
+                    <div class="p-4 border rounded-full aspect-square flex items-center justify-center bg-blue-50 text-xs font-bold uppercase tracking-widest">Bandung</div>
+                    <div class="p-4 border rounded-full aspect-square flex items-center justify-center bg-blue-50 text-xs font-bold uppercase tracking-widest">Surabaya</div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="p-8 bg-blue-600 text-white rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">Vision</h3>
+                    <p class="italic text-blue-100">"Menjadi penggerak utama dalam kebangkitan bisnis tradisional Indonesia, menjadikannya ikon modern yang dominan di pasar digital global tanpa kehilangan jati diri aslinya."</p>
+                </div>
+                <div class="p-8 bg-white border-2 border-blue-600 rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600">Mission</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Menjembatani Tradisi dan Teknologi
+Mengintegrasikan solusi digital mutakhir ke dalam model bisnis konvensional guna menciptakan sistem operasional yang efektif dan adaptif.
+                        <li>Meningkatkan Skalabilitas Bisnis Lokal
+Membantu pelaku bisnis tradisional memperluas jangkauan pasar mereka melalui platform web dan mobile yang inovatif agar lebih dikenal luas (membuming).
+</li>
+                        <li>Edukasi Transformasi Digital
+Menjadi mitra pendamping yang memberikan pemahaman praktis bagi pemilik bisnis tradisional dalam mengelola ekosistem digital secara mandiri dan berkelanjutan.
+</li>
+                        <li>Optimalisasi Nilai Autentik
+Memastikan setiap sentuhan teknologi yang kami berikan tetap menonjolkan keunikan dan nilai historis dari bisnis tersebut sebagai daya tarik utama.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="message" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Message Us</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                    <form id="messageForm" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-semibold mb-1 text-gray-600">Nama</label>
+                            <input type="text" id="input-name" placeholder="Nama Anda" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-blue-400 outline-none transition" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1 text-gray-600">Tanggal Lahir</label>
+                            <input type="date" id="input-birth" class="w-full p-2 border border-gray-300 rounded outline-none" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1 text-gray-600">Jenis Kelamin</label>
+                            <div class="flex space-x-6 mt-1">
+                                <label class="inline-flex items-center cursor-pointer">
+                                    <input type="radio" name="gender" value="Laki-laki" class="text-blue-600 focus:ring-blue-500" required>
+                                    <span class="ml-2">Laki-laki</span>
+                                </label>
+                                <label class="inline-flex items-center cursor-pointer">
+                                    <input type="radio" name="gender" value="Perempuan" class="text-blue-600 focus:ring-blue-500">
+                                    <span class="ml-2">Perempuan</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1 text-gray-600">Pesan</label>
+                            <textarea id="input-msg" placeholder="Tulis pesan Anda di sini..." class="w-full p-2 border border-gray-300 rounded h-24 outline-none transition" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 rounded hover:bg-blue-700 transition transform active:scale-95 shadow-md">Submit</button>
+                    </form>
+                </div>
+
+                <div id="result" class="bg-white p-8 rounded-xl shadow-inner border border-dashed border-gray-300 flex flex-col justify-start">
+                    <h3 class="text-lg font-bold text-gray-700 mb-4 border-b pb-2">Hasil Input:</h3>
+                    <div id="output-content" class="text-gray-500 italic">
+                        Belum ada pesan yang dikirim...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white text-center py-10 border-t text-gray-500 text-sm">
+        <p>Created by <strong>Nama Kamu</strong> | RevoU Mini Project © 2026</p>
+    </footer>
+
+    <script src="kodenya.js"></script>
+</body>
+</html>
